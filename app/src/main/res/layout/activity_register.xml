@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uinbdg.developer.surveriorapps.activity.RegisterActivity">
+
+    <TextView
+        android:id="@+id/headRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Register"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:layout_marginTop="30px"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headRegister"
+        android:hint="username"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:inputType="textPersonName"
+        android:singleLine="true"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:textColor="@color/textColor"
+        android:inputType="textPassword"
+        android:singleLine="true"/>
+    <EditText
+        android:id="@+id/namaLengkap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:textColor="@color/textColor"
+        android:inputType="textPersonName"
+        android:singleLine="true"/>
+    <EditText
+        android:id="@+id/noHp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No. Handphone"
+        android:layout_below="@id/namaLengkap"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:textColor="@color/textColor"
+        android:inputType="phone"
+        android:singleLine="true" />
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_below="@id/noHp"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:textColor="@color/textColor"
+        android:inputType="text"
+        android:singleLine="true"/>
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@+id/alamat"
+        android:layout_marginTop="30px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="120dp"
+        android:layout_marginLeft="120dp"
+        android:onClick="register"
+        tools:ignore="onClick"/>
+    <TextView
+        android:id="@+id/loginForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/btnReg"
+        android:layout_marginTop="30px"
+        android:gravity="center_horizontal"
+        android:text="Have an account? Login here"
+        android:textColor="@color/textColor"/>
+
+</RelativeLayout>
